@@ -1,6 +1,7 @@
 import argparse
 import requests
 import bs4
+import webbrowser
 
 # CLI argments for keywords and country
 parser = argparse.ArgumentParser()
@@ -59,4 +60,4 @@ r = requests.get(target_url)
 soup = bs4.BeautifulSoup(r.content, 'lxml')
 meat = soup.select('time-chart')
 
-print(soup.prettify())
+webbrowser.open_new(target_url)
