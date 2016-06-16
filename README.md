@@ -1,6 +1,9 @@
 # GoogleTrendsCLI
 Retrieve Google Trends data in JSON or chart format with the keywords and geo-targeting you provide at command line.
 
+Requires:
+  - Requests
+
 The module can be launched from the CL as follows:
   python googletrendscli.py firstkeyword secondkeyword --geo US
 
